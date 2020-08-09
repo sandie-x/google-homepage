@@ -1,0 +1,117 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: white;
+    margin: 0;
+    font-family: arial, sans-serif;
+    color: black;
+}
+
+#viewport {
+    min-height: 100%;
+    top: 0;
+    width: 100%;
+    position: relative;
+
+    /* display: grid; */
+    /* grid-template-rows: 1fr 2fr 1fr; */
+    /* align-content: center; */
+    /* justify-content: space-evenly; */
+}
+
+nav {
+    grid-area: 1 / 1 / span 1 / span 1;
+    width: 100%;
+}
+
+nav ul, footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li, footer li {
+    display: inline-block;
+    margin: 15px;
+}
+
+nav a, footer a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    padding: 5px;
+}
+
+#user-circle {
+    background: rgb(160, 160, 219);
+    color: white;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 1px;
+    border: 1px solid lavender;
+    border-radius: 50%;
+    font-size: 18px;
+    display: inline-block;
+}
+
+main {
+    grid-area: 2 / 1 / span 1 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+
+form {
+    padding: 40px;
+}
+
+#search-bar {
+    width: 100%;
+    height: 34px;
+}
+
+#search-bar:focus, #search-bar:hover {
+    box-shadow: 0 0 5px rgb(10, 9, 9);
+}
+
+button {
+    background: #F4F4F4;
+    border: 2px solid #F4F4F4;
+    border-radius: 4px;
+    padding: 9px;
+    color: rgb(63, 63, 63);
+    margin: 10px 0;
+}
+
+footer {
+    grid-area: 3 / 1 / span 1 / span 1;
+    background: #F2F2F2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer div {
+    border-top: 1px solid grey;
+    color: rgb(68, 68, 68);
+}
+
+#google-logo {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 109px;
+}
