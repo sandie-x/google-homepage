@@ -4,51 +4,62 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Sandie X">
-        <meta name="description" content="Remaking google's homepage using HTML and CSS">
+        <meta name="description" content="Recreating google's homepage using HTML and CSS">
         <title>Google Homepage Replicate</title>
-        <link rel="stylesheet" href="../../Portfolio/Styles/reset.css">
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-
     <body>
-        <div id="viewport">
-        <nav>
-            <ul>
-            <li><a href="#" title="About Google" target="_blank">About</a></li>
-            <li><a href="#" title="Google Store" target="_blank">Store</a></li>
-            <li style="float: right;"><a href="#" title="Gmail" target="_blank">Gmail</a></li>
-            <li style="float: right;"><a href="#" title="Images" target="_blank">Images</a></li>
-            <div id="user-circle"><p>S</p></div>
-            <p style="clear: both;"></p>
-        
-        </ul>    
-        </nav>
-
-        <main>
-            <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
-            <form>
-                <input type="text" id="search-bar"><br>
-                <button>Google Search</button>
-                <button>I'm Feeling Lucky</button>
-            </form>
-            <p>Google offered in: <a href="#">English</a></p>
-        </main>
-
-        <footer>
-            <div><p style="margin: 15px;">Canada</p></div>
-            <div>
+        <div id="content-container">
+            <nav>
                 <ul>
-                    <li><a href="#" title="Advertising" target="_blank">Advertising</a></li>
-                    <li><a href="#" title="Business" target="_blank">Business</a></li>
-                    <li><a href="#" title="How Search works" target="_blank">How Search works</a></li>
-                    <li style="float: right;"><a href="#" title="Privacy" target="_blank">Privacy</a></li>
-                    <li style="float: right;"><a href="#" title="Terms" target="_blank">Terms</a></li>
-                    <li style="float: right;"><a href="#" title="Settings" target="_blank">Settings</a></li>
+                    <li><a href="#" title="About Google">About</a></li>
+                    <li><a href="#" title="Google Store">Store</a></li>
                 </ul>
-                
-            </div>
-        </footer>
+
+                <ul id="nav-second-container">
+                    <li><a href="#" title="Gmail">Gmail</a></li>
+                    <li><a href="#" title="Google Images">Images</a></li>
+                    <li><a href="#" title="Google Apps"><i class="fa fa-th" style="font-size:20px;"></i></a></li>
+                    <li><a id="user-icon" title="Google Account">S</a></li>
+                </ul> 
+            </nav>
+
+            <main>
+                <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+                <form>
+                    <div id="search-bar-container">
+                        <i class="fa fa-search" style="font-size: 16px; color: grey;" aria-hidden="true"></i>
+                        <input type="text" id="search-bar">
+                        <i class="fa fa-microphone icon" style="font-size: 16px; color: grey;"></i>
+                    </div>
+                        
+                    <div>
+                        <button>Google Search</button>
+                        <button>I'm Feeling Lucky</button>
+                    </div>
+                </form>
+                <p>Google offered in: <a href="#">Français</a></p>
+            </main>
+
+            <footer>
+                <div>
+                    <p style="margin: 15px;">Canada</p>
+                </div>
+                <div id="footer-container">
+                    <ul>
+                        <li><a href="#" title="Advertising">Advertising</a></li>
+                        <li><a href="#" title="Business">Business</a></li>
+                        <li><a href="#" title="How Search works">How Search works</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" title="Privacy">Privacy</a></li>
+                        <li><a href="#" title="Terms" target="_blank">Terms</a></li>
+                        <li><a href="#" title="Settings">Settings</a></li>
+                    </ul>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
